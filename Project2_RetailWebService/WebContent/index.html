@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>REST API</title>
+<link href="./styles/style.css" rel="stylesheet"  />
+<script src="jquery-1.12.1.js"></script>
+<script src="product.js"></script>
+
+
+</head>
+<body>
+<h3>Shop your Way</h3>
+<div class="Outer_div">
+		<div class="login_div">
+            <form method="post" class="login_form">
+                <input id="userName" type="text" name="userName" placeholder="Email"/>
+                <input id="password" type="password" name="password" placeholder="Password" />
+                <input type="button" value="Login" class="btn btn-inverse" id="login" />
+            </form>
+            <div id="message"></div>
+	   </div>
+	   <div id="Search_div">
+        <form method="get">
+            <input type="text" placeholder="Search here" id="term" />
+            <input type="button" class="btn btn-inverse" value="Search" id="search" />
+        </form>
+	</div>
+        <div class="Result_div">
+            <div id="content">	
+			
+            </div>
+            <div id="orderMessage"></div>
+            <form method="post">
+            <input type="hidden" id="orderData">
+            <input type="button" class="btn btn-inverse" style="display:none;" value="Order on 1-click" id="order" />
+        </form>
+        </div>
+        </div>
+</body>
+</html>

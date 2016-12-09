@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- Database connection settings -->
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:8082/lsmarketplace</property>
+		<property name="hibernate.connection.username">reema</property>
+		<property name="hibernate.connection.password">root123</property>
+
+		<property name="show_sql">true</property>
+				<property name="hibernate.id.new_generator_mappings">false</property>
+		<!-- org.hibernate.HibernateException: No CurrentSessionContext configured! -->
+		<property name="hibernate.current_session_context_class">thread</property>
+
+		<!-- Mapping with model class containing annotations -->
+		<mapping class="model.product.Product"/>
+		<mapping class="model.partner.Partners"/>
+		<mapping class="model.order.Order"/>
+		<mapping class="model.customer.Customer"/>
+		<mapping class="model.customer.CustomerAddress"/>
+		<mapping class="model.customer.CustomerPhone"/>
+		<mapping class="model.order.ProductOrder"/>
+	</session-factory>
+</hibernate-configuration>
+ 

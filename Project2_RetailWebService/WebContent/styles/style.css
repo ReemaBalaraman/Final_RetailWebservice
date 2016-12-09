@@ -1,0 +1,39 @@
+body{
+	
+	   background-color: #FF917E;
+        color: white;
+	
+}
+h3{
+	text-align : center;
+}
+.login_div{
+	margin: 20px 20px 20px 40px;
+}
+.Outer_div{
+	margin : 100px 250px 250px 250px;
+
+	
+}
+#Search_div{
+	margin-left: 200px;
+	margin-right: 100px;
+	
+	
+}
+#message
+{
+	color: black;	
+}
+#orderMessage
+{
+        color: 	#c63939;	
+}
+.Result_div{
+	background-color: white;
+	width: 800px;
+	height: 800px;
+  color: black;
+	margin-right: 100px;
+	margin-top: 40px;
+}
